@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #EE5B59;
+    --black-color: #071013;
+    --secondary-color: #2FBF71;
+}
+
+h2 {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 1rem 2rem;
+
+    color: white;
+    background-color: var(--black-color);;
+
+}
+
+header img {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+nav {
+    background-color: var(--secondary-color);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    width: 100%;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav .active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: .5rem;
+    
+    padding: 2rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+    justify-content: flex-start;
+
+}
+
+main h1 {
+    grid-column: span 2;
+    
+}
+
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #fff;
+    color: #071013;
+}
+
+.card h2 {
+    padding: 0.5rem 1rem;
+    background-color: #071013;
+    color: #fff;
+}
+
+.card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0.5rem 1rem;
+}
+
+footer {
+    background-color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+
+    color: white;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    main h1 {
+        grid-column: span 1;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
