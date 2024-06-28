@@ -9,11 +9,22 @@
         content="WDD 230 - Web Frontend Development develop by Abimael Tavares to course assignment portal">
     <meta name="author" content="Abimael Tavares">
 
+    <meta property="og:title" content="Abimael Tavares - Profile Page" />
+    <meta property="og:type" content="image" />
+    <meta property="og:description"
+        content="Abimael Tavares is a full-stack developer and is currently enrolled in the web development course at BYU-Idaho." />
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+
+    <link rel="icon" href="./images/favicon.ico">
+
 
 
     <link rel="stylesheet" type="text/css" href="./styles/base.css">
@@ -26,60 +37,62 @@
         <img src="./images/profile.jpg" alt="abimael tavares profile image" width="75" height="100">
         <span>Abimael Silva Tavares</span>
     </header>
-    <nav>
-        <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">Site Plan</a></li>
-            <li><a href="#">Form</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h1> WDD 230: Web Frontend Development</h1>
-        <section class="card">
-            <h2>Learning Activities" as text</h2>
-            <ul>
-                <li>
-                    <span>Week 01:</span>
-                    <a href="#">Layout</a>
-                    |
-                    <a href="#">Media Query</a>
-                    |
-                    <a href="#">Js Pen</a>
-                </li>
-                <li>
-                    <span>Week 02:</span>
-                </li>
-                <li>
-                    <span>Week 03:</span>
-                </li>
-                <li>
-                    <span>Week 04:</span>
-                </li>
-                <li>
-                    <span>Week 05:</span>
-                </li>
-                <li>
-                    <span>Week 06:</span>
-                </li>
+    <button id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="#">Form</a></li>
             </ul>
-        </section>
-        <section class="card">
-            <h2>Information</h2>
-            <ul>
-                <li><a href="#"></a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>
-            &copy;<span id="year"></span> | Abimael Tavares | Brazil
-        </p>
-        <p id="lastModified">
+        </nav>
+        <main>
+            <h1> WDD 230: Web Frontend Development</h1>
+            <section class="card">
+                <h2>Learning Activities" as text</h2>
+                <ul>
+                    <li>
+                        <span>Week 01:</span>
+                        <a href="#">Layout</a>
+                        |
+                        <a href="#">Media Query</a>
+                        |
+                        <a href="#">Js Pen</a>
+                    </li>
+                    <li>
+                        <span>Week 02:</span>
+                    </li>
+                    <li>
+                        <span>Week 03:</span>
+                    </li>
+                    <li>
+                        <span>Week 04:</span>
+                    </li>
+                    <li>
+                        <span>Week 05:</span>
+                    </li>
+                    <li>
+                        <span>Week 06:</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Information</h2>
+                <ul>
+                    <li><a href="#"></a></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>
+                &copy;<span id="year"></span> | Abimael Tavares | Brazil
+            </p>
+            <p id="lastModified">
 
-        </p>
-    </footer>
-    <script src="./scripts/getDates.js"></script>
+            </p>
+        </footer>
+        <script src="./scripts/getDates.js"></script>
+        <script src="./scripts/hamburgerMenu.js"></script>
 </body>
 
 </html>
