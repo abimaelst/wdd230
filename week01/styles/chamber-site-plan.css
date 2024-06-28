@@ -1,29 +1,29 @@
 
 :root {
-    --bodybackgroundcolor: #D5BDAF;
-    --primarybackgroundcolor: #D6CCC2;
-    --primarycolor1: #0E1208;
-    --secondarycolor: #312416;
+    --primary-bg-color: #E4E4DE;
+    --secondary-bg-color: #C4C5BA;
+    --primary-color: #1B1B1B;
+    --secondary-color:  #595f39;
 
-    --Text-Heading1: "Oswald";
-    --SubText-Heading: "Montserrat";
-    --Paragraph-Text: "Exo 2";
+    --title-font: "Oswald";
+    --sub-title-font: "Montserrat";
+    --paragraph-font: "Exo 2";
 
 }
 
 body {
     background-color: white;
     margin: 0 auto;
-    color: var(--primarycolor1);
+    color: var(--primary-color);
     padding: 10px;
 }
 
 header {
-    background-color: var(--primarybackgroundcolor);
+    background-color: var(--primary-bg-color);
     padding: 5px;
     text-align: center;
-    font-family: var(--Text-Heading1);
-    color: var(--primarycolor1);
+    font-family: var(--title-font);
+    color: var(--primary-color);
     font-size: 10px;
     font-weight: bolder;
     border-radius: 3px;
@@ -34,8 +34,8 @@ header {
 }
 
 h2 {
-    font-family: var(--SubText-Heading);
-    color: var(--secondarycolor);
+    font-family: var(--sub-title-font);
+    color: var(--secondary-color);
     font-size: 20px;
     font-weight: bolder;
     text-decoration: underline;
@@ -44,7 +44,7 @@ h2 {
 
 p {
     font-size: 20px;
-    font-family: var(--Paragraph-Text);
+    font-family: var(--paragraph-font);
 
 }
 
@@ -55,30 +55,30 @@ table {
 }
 
 .bdc {
-    background-color: var(--bodybackgroundcolor);
-    color: var(--primarycolor1);
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
 }
 
 .pbc {
-    background-color: var(--primarybackgroundcolor);
-    color: var(--primarycolor1);
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
 }
 
 .pc {
-    background-color: var(--primarycolor1);
-    color: var(--bodybackgroundcolor);
+    background-color: var(--primary-color);
+    color: var(--primary-bg-color);
 }
 
 .sc {
-    background-color: var(--secondarycolor);
-    color: var(--bodybackgroundcolor);
+    background-color: var(--secondary-color);
+    color: var(--secondary-bg-color);
 }
 
 table th {
     font-size: 15px;
-    font-family: var(--Paragraph-Text);
-    background-color: var(--primarycolor1);
-    color: var(--bodybackgroundcolor);
+    font-family: var(--paragraph-font);
+    background-color: var(--primary-color);
+    color: var(--primary-bg-color);
 
 }
 
@@ -89,8 +89,8 @@ table td {
 
 
 h3 {
-    font-family: var(--SubText-Heading);
-    color: var(--secondarycolor);
+    font-family: var(--sub-title-font);
+    color: var(--secondary-color);
     font-size: 10px;
     font-weight: bolder;
 }

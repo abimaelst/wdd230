@@ -16,7 +16,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        border-bottom: 2px solid var(--primarycolor1);
+        border-bottom: 2px solid var(--primary-color);
     }
 
     .h1p {
