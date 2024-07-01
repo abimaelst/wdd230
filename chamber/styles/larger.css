@@ -118,7 +118,9 @@
 
     .sidebar {
         grid-column: 1;
-        color: var(--secondary-bg-color);
+        /* background-color: var(--secondarycolor); */
+        /* padding: 20px; */
+        color: var(--primarybackgroundcolor);
         display: block;
     }
 
@@ -129,6 +131,7 @@
     }
 
     .sidebar p {
+        /* color: var(--primarybackgroundcolor); */
         font-size: 12px;
     }
 

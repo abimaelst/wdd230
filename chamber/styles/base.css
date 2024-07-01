@@ -269,11 +269,12 @@ button {
 
 .discover-main {
     grid-template-columns: 1fr;
+    /* single column layout */
 }
 
 .sidebar {
     grid-column: 1;
-
+    height: fit-content;
 }
 
 .main-content {
