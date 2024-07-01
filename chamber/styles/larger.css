@@ -98,8 +98,7 @@
     }
 
     .footerDiv {
-        display: grid;
-        text-align: left;
+        flex-direction: row;
     }
 
     .div2 {

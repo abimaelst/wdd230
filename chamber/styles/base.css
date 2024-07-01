@@ -206,10 +206,10 @@ ul li {
 .footerDiv {
     background-color: var(--primary-bg-color);
     padding: 10px;
-    display: block;
-    grid-template-columns: 1fr 1fr 1fr;
-    border-radius: 5px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .div1 {
@@ -343,4 +343,8 @@ a {
 .main-content {
     width: 100%;
     height: auto;
+}
+
+.active {
+    background: rgba(50, 50, 50, 0.4);
 }
