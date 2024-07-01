@@ -348,3 +348,11 @@ a {
 .active {
     background: rgba(50, 50, 50, 0.4);
 }
+
+.footerDiv div {
+ display: flex;
+ align-items: center;
+ margin-left: 5px;
+
+ 
+}

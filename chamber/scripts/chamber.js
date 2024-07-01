@@ -19,6 +19,17 @@ menu.addEventListener("click", () => {
     menu.classList.toggle("open");
 });
 
+const visit_quantity = document.querySelector("#visits");
+
+const visitsQuantity = localStorage.getItem('visit_quantity')
+
+if (!visitsQuantity) {
+  localStorage.setItem('visit_quantity', 1);
+} else {
+  localStorage.setItem('visit_quantity', Number(visitsQuantity) + 1);
+}
+
+visit_quantity.innerHTML = visitsQuantity;
 
 
 const visit = document.querySelector(".visits");
