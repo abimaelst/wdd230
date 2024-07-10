@@ -1,0 +1,70 @@
+:root {
+    --box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+    --input-color: rgb(60, 66, 87);
+    --box-shadow-hover: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(58 151 212 / 70%) 0px 0px 0px 4px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 46%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+    --form-button-color: rgb(84, 105, 212);
+}
+
+form {
+    min-width: 400px;
+    padding: 20px 15px;
+}
+
+.form__section {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 12px;
+}
+
+.form__section label {
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.form__section input:not([type='range']) {
+    border: 0;
+    outline: 0;
+    color: var(--input-color);
+    background-color: rgb(255, 255, 255);
+    box-shadow: var(--box-shadow);
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 10px 8px;
+    min-height: 28px;
+    vertical-align: middle;
+    transition: background-color .24s, box-shadow .24s;
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.24s, 0.24s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+}
+
+.form__section input:focus:not([type='range']) {
+    box-shadow: var(--box-shadow-hover);
+}
+
+.form__button {
+    width: 100%;
+    margin-top: 24px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: white;
+    background-color: var(--form-button-color);
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px, var(--form-button-color) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 12px;
+    display: inline-block;
+    min-height: 28px;
+    transition: background-color .24s, box-shadow .24s;
+}
+
+.form__button:hover {
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px, var(--form-button-color), rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 3px 9px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+}
