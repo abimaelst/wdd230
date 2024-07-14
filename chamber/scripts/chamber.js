@@ -12,7 +12,7 @@ color.textContent = (`This site was last modified: ${lastModifie}`);
 
 // This code is create a hambugger for the mobile view
 const menu = document.querySelector("#menu");
-const links = document.querySelector("nav");
+const links = document.querySelector("#menu-items");
 
 menu.addEventListener("click", () => {
     links.classList.toggle("open");

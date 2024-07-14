@@ -1,239 +1,121 @@
-@media screen and (min-width: 32rem) {
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        text-align: left;
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+    /* CSS */
+    .footer__wrapper {
+        flex: 1 1;
+    }
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    html {
+        font-size: 55.2%;
     }
 
-    form {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 1rem;
-        margin-top: -12px;
+    .main__discover {
+        grid-template-columns: 1fr;
     }
 
-    #menu {
+    .hero__title {
+        width: 50%;
+    }
+
+    .footer__wrapper {
+        flex: 1 1;
+    }
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* CSS */
+    html {
+        font-size: 52.2%;
+    }
+
+
+    .header__form {
         display: none;
     }
 
-    nav a {
-        display: block;
-        margin-top: 50px;
-        border-radius: 0px;
-        background-color: whitesmoke;
-        text-align: center;
-        border-bottom: 1px solid var(--secondary-bg-color);
-        border-top: 1px solid var(--secondary-bg-color);
-    }
+    .header__menu {
+        flex: 1;
 
-    .heroImage {
-        display: grid;
-        grid-template: 600px / 1fr;
-        border-radius: 5px;
-        background-color: var(--secondary-bg-color);
-    }
-
-    .heroAnimation1 {
-        display: block;
-    }
-
-    .heroAnimation2 {
-        display: block;
-    }
-
-    .heroAnimation3 {
-        display: block;
-    }
-
-    .heroAnimation4 {
-        display: block;
-    }
-
-    .heroAnimation5 {
-        display: block;
-    }
-
-    .heroWelcome {
-        margin-top: 100px;
-        padding: 10px;
-    }
-
-    .callToAction {
-        /* height: 30px; */
-        display: flex;
         justify-content: center;
-        text-align: left;
-
     }
 
-    h4 {
-        font-size: 20px;
-        flex: 0.60 0.60 100px;
-        margin-top: 20px;
+    .main__discover {
+        grid-template-columns: 1fr;
     }
 
-    button {
-        margin-top: 17px;
-        box-shadow: 1px 1px 7px var(--secondary-bg-color);
-        border-radius: 5px;
+    .hero__title {
+        font-size: 5rem;
+        width: 60%;
     }
 
-    section {
-        text-align: center;
-        max-width: 960px;
-        width: 80%;
+    .footer__wrapper {
+        flex: 1;
     }
 
-    p {
-        padding: 20px;
-        font-size: 30px;
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    /* CSS */
+    html {
+        font-size: 52.2%;
     }
 
-    ul {
-        text-align: left;
+    .header__form {
+        display: none;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__menu-mobile {
         display: flex;
     }
 
-    .footerDiv {
-        flex-direction: row;
+    .hero__title {
+        font-size: 5rem;
+        width: 70%;
     }
 
-    .div2 {
-        margin-top: 32px;
+    .main__discover {
+        grid-template-columns: 1fr;
     }
 
-
-    .mainContainer {
-        display: grid;
-        grid-template: 1fr / 400px 1fr;
-        margin: 0 auto;
-        gap: 0;
-        grid-gap: 0;
-        margin-top: 20px;
+    .footer__wrapper {
+        flex: 1;
     }
 
-    .sidebar {
-        grid-column: 1;
-        /* background-color: var(--secondarycolor); */
-        /* padding: 20px; */
-        color: var(--primarybackgroundcolor);
-        display: block;
+    .footer__menu {
+        flex-direction: column;
     }
 
-    .main-content {
-        grid-column: 2;
-        padding: 5px;
-        width: 100%;
-    }
-
-    .sidebar p {
-        /* color: var(--primarybackgroundcolor); */
-        font-size: 12px;
-    }
-
-    .sideDiv1 {
-        padding: 0;
-        margin: 0;
-
-
-    }
-
-    .sideDiv2 {
-        margin-top: 8px;
-    }
-
-    .sideDiv1 h2,
-    a {
-        font-size: 15px;
-
-    }
-
-    .sideDiv1 h3 {
-        font-size: 10px;
-    }
-
-    .sideDiv1 h3,
-    p {
-        margin-top: -10px;
-        margin-bottom: -10px;
-
-    }
-
-    .sideDiv4 {
-        margin-top: 30px;
-        background-color: rgba(123, 98, 98, 0.3);
-        box-shadow: 1px 1px 5px black;
-        border-radius: 10px;
-
-    }
-
-    .sideDiv1 h2 {
-        margin-bottom: 20px;
-    }
-
-    .sideDiv2 img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .sideDiv2 h2 {
-        font-size: 15px;
-    }
-
-    .sideDiv3 iframe {
-        margin-top: 20px;
-        width: 100%;
-        height: 300px;
-    }
-
-    .main-content {
-        width: 100%;
-        /* height: auto; */
-    }
-
-    .hover1:hover {
-        box-shadow: 0 0 50px #333;
-
-    }
-
-    .hover2:hover {
-        border-radius: 15px 150px;
-    }
-
-    .hover3:hover {
-        opacity: .5;
-    }
-
-    .hover4:hover {
-        filter: blur(4px);
-    }
-
-    .hover5:hover {
-        filter: blur(1px) grayscale(50%);
-    }
-
-    .hover6:hover {
-        width: 100%;
-        height: 75px;
-        object-fit: cover;
-    }
-
-    .hover7:hover {
-        filter: contrast(50%);
-    }
-
-    .hover8:hover {
-        filter: saturate(50%);
-    }
-
-    .hover9:hover {
-        mix-blend-mode: difference;
-    }
-
-    .hover10:hover {
-        mix-blend-mode: hard-light;
+    .footer_information {
+        align-items: center;
     }
 }

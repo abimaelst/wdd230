@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -27,43 +27,62 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <a href="index.html">
-                <h1>The Fortaleza Chamber of Commerce</h1>
-            </a>
-        </div>
-        <form id="form">
-            <input type="search" id="search-input" placeholder="Search...">
-            <button id="search-button">Search</button>
-        </form>
-    </header>
-
-    <button id="menu">Menu</button>
-    <div id="navigation">
-        <nav>
+    <header class="header">
+        <a href="index.html">
+            <img src="./images/logo.png" alt="logo" class="header__logo">
+        </a>
+        <nav class="header__menu">
             <a class="active" href="index.html">Home</a>
             <a href="discover.html">Discover</a>
-            <a href="events.html">Events</a>
-            <a href="membership.html">Membership</a>
+            <a href="join.html">Join Us</a>
             <a href="contact.html">Contact</a>
         </nav>
-    </div>
+        <nav id="menu" class="header__menu-mobile">
+            <button class="header__menu-hamburger-button">
+                <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg class="hamburger-icon-close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
 
-    <main>
-        <div class="heroImage">
-            <div class="heroSlideshow">
-                <img class="heroAnimation1" src="./images/image-01.webp" alt="Fortaleza Skyline">
-                <h3 class="heroWelcome">Welcome to the Fortaleza Chamber of Commerce, where businesses connect, grow,
-                    and
-                    thrive.</h3>
+            </button>
+            <div id="menu-items" class="header__menu-hamburger-items">
+                <a class="active" href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="join.html">Join Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <form class="header__form" action="#">
+            <div class="form__section">
+                <input type="search" id="search-input" placeholder="Search...">
+            </div>
+            <div class="form__section">
+                <input type="submit" value="search">
+            </div>
+        </form>
+    </header>
+    <main class="main">
+        <div class="main__hero">
+            <div class="main__hero-overlay">
+
+            </div>
+            <img src="./images/fcc-build.webp" alt="Fortaleza Skyline">
+            <div class="hero__title">
+                <p>
+                    <span>Empower your business in Fortaleza. Join the Chamber today!</span>
+                </p>
             </div>
         </div>
-
-        <div class="callToAction">
-            <h4>Empower your business in Fortaleza. Join the Chamber today!</h4>
-            <button>Join Now</button>
+        <div class="main__action-wrapper">
+            <button class="button main__action-button">Join Now</button>
         </div>
+
+
 
         <section class="section">
             <h2>Upcoming Events</h2>
@@ -84,17 +103,33 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footerDiv">
-            <p>&copy; <span id="year"></span> Fortaleza Chamber of Commerce</p>
-            <div>
-                <a href="mailto:abimaelst@gmail.com">info@fortalezacc.com</a> |
-                <a href="tel:+5585981343131">+55 (85) 98134-3131</a>
-                <div>
-                    <span>visits:</span>
-                    <div id="visits"></div>
+    <footer class="footer">
+        <div class="footer_information">
+            <a href="index.html">
+                <img src="./images/logo.png" alt="logo" class="header__logo">
+            </a>
+            <div class="footer__wrapper">
+                <nav class="footer__menu">
+                    <a class="active" href="index.html">Home</a>
+                    <a href="discover.html">Discover</a>
+                    <a href="join.html">Join Us</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+
+                <div class="footer__contact">
+                    <a href="mailto:abimaelst@gmail.com">info@fortalezacc.com</a> |
+                    <a href="tel:+5585981343131">+55 (85) 98134-3131</a>
+                    <div>|</div>
+                    <div class="contact__visits">
+                        <span>Visits:</span>
+                        <div id="visits">0</div>
+                    </div>
                 </div>
             </div>
+
+        </div>
+        <div class="footer__license">
+            <p>&copy; <span id="year"></span> Fortaleza Chamber of Commerce</p>
             <p id="lastModified"></p>
         </div>
     </footer>

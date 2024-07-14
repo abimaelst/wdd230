@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortaleza Chamber of Commerce</title>
+    <meta name="description"
+        content="Your gateway to business success in Fortaleza. Connect, grow, and thrive with the Fortaleza Chamber of Commerce.">
+    <meta name="author" content="Abimael Silva Tavares">
+
+    <meta property="og:title" content="Fortaleza Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Fortaleza Chamber of Commerce">
+    <meta property="og:image" content="[Link to your FCOC logo or promotional image]">
+    <meta property="og:url" content="https://abimaelst.github.io/wdd230/chamber/index.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="./images/logo.png" alt="logo" class="header__logo">
+        </a>
+        <nav class="header__menu">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a class="active" href="join.html">Join Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <nav id="menu" class="header__menu-mobile">
+            <button class="header__menu-hamburger-button">
+                <svg class="hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg class="hamburger-icon-close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+
+            </button>
+            <div id="menu-items" class="header__menu-hamburger-items">
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a class="active" href="join.html">Join Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <form class="header__form" action="#">
+            <div class="form__section">
+                <input type="search" id="search-input" placeholder="Search...">
+            </div>
+            <div class="form__section">
+                <input type="submit" value="search">
+            </div>
+        </form>
+    </header>
+    <main class="main">
+        <section>
+            <h3 class="thankyou">Thank you for joining the chamber! We're excited to have you with us.</h3>
+            <div class="join-confirm">
+                <div>Name:</div>
+                <div><span id="fullname"></span></div>
+                <div>Email:</div>
+                <div><span id="email"></span></div>
+                <div>Cell Phone:</div>
+                <div><span id="cellphone"></span></div>
+                <div>Membership Level Chosen:</div>
+                <div><span id="level"></span></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_information">
+            <a href="index.html">
+                <img src="./images/logo.png" alt="logo" class="header__logo">
+            </a>
+            <div class="footer__wrapper">
+                <nav class="footer__menu">
+                    <a href="index.html">Home</a>
+                    <a href="discover.html">Discover</a>
+                    <a href="join.html">Join Us</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+
+                <div class="footer__contact">
+                    <a href="mailto:abimaelst@gmail.com">info@fortalezacc.com</a> |
+                    <a href="tel:+5585981343131">+55 (85) 98134-3131</a>
+                    <div>|</div>
+                    <div class="contact__visits">
+                        <span>Visits:</span>
+                        <div id="visits">0</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__license">
+            <p>&copy; <span id="year"></span> Fortaleza Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+
+    <script src="scripts/chamber.js"></script>
+</body>
+
+</html>
