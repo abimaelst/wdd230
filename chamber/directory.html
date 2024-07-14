@@ -34,8 +34,8 @@
         <nav class="header__menu">
             <a href="index.html">Home</a>
             <a href="discover.html">Discover</a>
-            <a class="active" href="join.html">Join Us</a>
-            <a href="directory.html">Directory</a>
+            <a href="join.html">Join Us</a>
+            <a class="active" href="directory.html">Directory</a>
         </nav>
         <nav id="menu" class="header__menu-mobile">
             <button class="header__menu-hamburger-button">
@@ -53,8 +53,8 @@
             <div id="menu-items" class="header__menu-hamburger-items">
                 <a href="index.html">Home</a>
                 <a href="discover.html">Discover</a>
-                <a class="active" href="join.html">Join Us</a>
-                <a href="directory.html">Directory</a>
+                <a href="join.html">Join Us</a>
+                <a class="active" href="directory.html">Directory</a>
             </div>
         </nav>
         <form class="header__form" action="#">
@@ -66,22 +66,14 @@
             </div>
         </form>
     </header>
-    <main class="main">
-        <section>
-            <h3 class="thankyou">Thank you for joining the chamber! We're excited to have you with us.</h3>
-            <div class="join-confirm">
-                <div>Name:</div>
-                <div><span id="fullname"></span></div>
-                <div>Email:</div>
-                <div><span id="email"></span></div>
-                <div>Cell Phone:</div>
-                <div><span id="cellphone"></span></div>
-                <div>Membership Level Chosen:</div>
-                <div><span id="level"></span></div>
-            </div>
-        </section>
+    <main class="main__directory">
+        <h2>Business Directory</h2>
+        <div class="buttons__wrapper">
+            <button id="listViewBtn" class="button">List View</button>
+            <button id="gridViewBtn" class="active button">Grid View</button>
+        </div>
+        <div id="directoryContent" class="grid-view"> </div>
     </main>
-
     <footer class="footer">
         <div class="footer_information">
             <a href="index.html">
@@ -115,6 +107,7 @@
 
 
     <script src="scripts/chamber.js"></script>
+    <script src="scripts/members.js"></script>
 </body>
 
 </html>

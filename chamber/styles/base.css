@@ -365,6 +365,73 @@ body {
     font-weight: 500;
 }
 
+.main__directory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+.member-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.list-view .member-item {
+    width: 100%;
+}
+
+.main__directory table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.main__directory th,
+.main__directory td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+
+    margin-top: 12px;
+}
+
+.list-view {
+    margin-top: 12px;
+}
+
+.member-item img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.buttons__wrapper {
+    display: flex;
+    gap: 8px
+}
+
+
+
+.list-view .member-item {
+    width: 100%;
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
 
 
 /* Buttons */
@@ -385,7 +452,7 @@ body {
     padding: 10px 25px;
     text-align: center;
     transform: translateY(0);
-    transition: transform 150ms, box-shadow 150ms;
+    transition: transform 150ms, box-shadow 150ms, color 0.5s;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
@@ -394,6 +461,10 @@ body {
 .button:hover {
     box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
     transform: translateY(-2px);
+}
+
+.button.active {
+    filter: brightness(1.3);
 }
 
 
@@ -528,11 +599,12 @@ form {
 
     justify-content: flex-end;
     gap: 12px;
-    
+
     margin-top: 12px;
 }
 
-.form__section label, .form__section-inline label {
+.form__section label,
+.form__section-inline label {
     font-size: 14px;
     font-weight: 500;
 }
@@ -558,7 +630,8 @@ form {
     transition-delay: 0s, 0s;
 }
 
-.form__section input:is([type='radio']), .form__section textarea {
+.form__section input:is([type='radio']),
+.form__section textarea {
     margin-top: 8px;
     border: 0;
     outline: 0;

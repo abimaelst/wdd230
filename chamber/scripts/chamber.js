@@ -1,36 +1,38 @@
 const dateOption = {
-    year: "numeric"
+  year: "numeric",
 };
 
-document.querySelector("#year").textContent = new Date().toLocaleDateString("en-Us", dateOption);
+document.querySelector("#year").textContent = new Date().toLocaleDateString(
+  "en-Us",
+  dateOption
+);
 
 // This code is to show when last the site was updated
 const lastModifie = document.lastModified;
 color = document.querySelector("#lastModified");
 color.style.color = "#0E1208";
-color.textContent = (`This site was last modified: ${lastModifie}`);
+color.textContent = `This site was last modified: ${lastModifie}`;
 
 // This code is create a hambugger for the mobile view
 const menu = document.querySelector("#menu");
 const links = document.querySelector("#menu-items");
 
 menu.addEventListener("click", () => {
-    links.classList.toggle("open");
-    menu.classList.toggle("open");
+  links.classList.toggle("open");
+  menu.classList.toggle("open");
 });
 
 const visit_quantity = document.querySelector("#visits");
 
-const visitsQuantity = localStorage.getItem('visit_quantity')
+const visitsQuantity = localStorage.getItem("visit_quantity");
 
 if (!visitsQuantity) {
-  localStorage.setItem('visit_quantity', 1);
+  localStorage.setItem("visit_quantity", 1);
 } else {
-  localStorage.setItem('visit_quantity', Number(visitsQuantity) + 1);
+  localStorage.setItem("visit_quantity", Number(visitsQuantity) + 1);
 }
 
 visit_quantity.innerHTML = visitsQuantity;
-
 
 const visit = document.querySelector(".visits");
 
@@ -38,30 +40,30 @@ const visit = document.querySelector(".visits");
 const now = new Date();
 
 // Check if this is the user's first visit
-if (!localStorage.getItem('lastVisit')) {
+if (!localStorage.getItem("lastVisit")) {
   // Set the last visit date to now
-  localStorage.setItem('lastVisit', now.getTime());
-  visit.textContent = 'Welcome! Let us know if you have any questions.';
+  localStorage.setItem("lastVisit", now.getTime());
+  visit.textContent = "Welcome! Let us know if you have any questions.";
   visit.style.fontWeight = "bold";
 } else {
   // Get the last visit date from localStorage
-  const lastVisit = new Date(parseInt(localStorage.getItem('lastVisit')));
+  const lastVisit = new Date(parseInt(localStorage.getItem("lastVisit")));
 
   // Calculate the time difference between visits
   const timeDiff = now.getTime() - lastVisit.getTime();
   const daysDiff = Math.floor(timeDiff / (1000 * 3600 * 24));
 
   // Display the appropriate message
-  if (daysDiff == 0) {
-    visit.textContent = 'Back so soon! Awesome!';
+  if (daysDiff == 0 && visit) {
+    visit.textContent = "Back so soon! Awesome!";
     visit.style.fontWeight = "bold";
-  } else {
-    const daysText = daysDiff == 1 ? 'day' : 'days';
+  } else if (visit) {
+    const daysText = daysDiff == 1 ? "day" : "days";
     visit.textContent = `You last visited ${daysDiff} ${daysText} ago.`;
     visit.style.fontWeight = "bold";
   }
 
-//   lastVisit++;
+  //   lastVisit++;
   // Update the last visit date to now
-  localStorage.setItem('lastVisit', now.getTime());
+  localStorage.setItem("lastVisit", now.getTime());
 }

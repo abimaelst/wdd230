@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Beachside Eats",
+    "address": "Av. Beira Mar, 1234",
+    "phone": "+55 (85) 98765-4321",
+    "website": "https://www.beachsideeats.com",
+    "image": "image-03.webp",
+    "membership": "Gold"
+  },
+  {
+    "name": "Tech Hub Solutions",
+    "address": "Rua Monsenhor Tabosa, 567",
+    "phone": "+55 (85) 3210-9876",
+    "website": "https://www.techhubsolutions.com.br",
+    "image": "image-02.webp",
+    "membership": "Silver"
+  },
+  {
+    "name": "Fortaleza Fitness Center",
+    "address": "Av. Santos Dumont, 890",
+    "phone": "+55 (85) 2468-1357",
+    "website": "https://www.fortalezafitness.com",
+    "image": "image-01.webp",
+    "membership": "Bronze"
+  },
+  {
+    "name": "Solar Energy Fortaleza",
+    "address": "Av. Desembargador Moreira, 101",
+    "phone": "+55 (85) 8765-4321",
+    "website": "https://www.solarenergyfortaleza.com.br",
+    "image": "image-01.webp",
+    "membership": "Gold"
+  },
+  {
+    "name": "Hotel Praia Centro",
+    "address": "Rua Pereira Filgueiras, 234",
+    "phone": "+55 (85) 9999-8888",
+    "website": "https://www.hotelpraiacentro.com.br",
+    "image": "image-03.webp",
+    "membership": "Silver"
+  },
+  {
+    "name": "Art Gallery Fortaleza",
+    "address": "Rua Dragão do Mar, 56",
+    "phone": "+55 (85) 1111-2222",
+    "website": "https://www.artgalleryfortaleza.com",
+    "image": "image-01.webp",
+    "membership": "Bronze"
+  },
+  {
+    "name": "Fortaleza Consulting Group",
+    "address": "Av. Dom Luís, 789",
+    "phone": "+55 (85) 3333-4444",
+    "website": "https://www.fortalezaconsulting.com.br",
+    "image": "image-03.webp",
+    "membership": "Gold"
+  }
+]
