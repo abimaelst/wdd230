@@ -25,10 +25,10 @@
 
     <link rel="icon" href="./images/favicon.ico">
 
-
-
     <link rel="stylesheet" type="text/css" href="./styles/base.css">
     <link rel="stylesheet" type="text/css" href="./styles/larger.css">
+
+    <script src="./config/config.js"></script>
 
 </head>
 
@@ -82,8 +82,8 @@
                     <a class="listhome"
                         href="https://byui-cse.github.io/wdd230-ww-course/week02/prepare-design-principles.html">Web
                         Design Principles</a> | <a href="https://codepen.io/blazzard-jason/pen/BaOwMvg">Responsive
-                        "Hamburger" Menu</a> | <a
-                        href="https://abimaelst.github.io/wdd230/week02/bom.html">JavaScript: DOM Manipulation</a>
+                        "Hamburger" Menu</a> | <a href="https://abimaelst.github.io/wdd230/week02/bom.html">JavaScript:
+                        DOM Manipulation</a>
                 </li>
                 <li>
                     <span>Week 03:</span>
@@ -108,7 +108,15 @@
         </section>
         <section class="card">
             <h2>Information</h2>
-            <p>Fortaleza, Brazil Weather Forecast, 30°C Mostly Cloudy.</p>
+            <p>Fortaleza, Brazil Weather Forecast,</p>
+            <h1>Weather</h1>
+            <div>
+                <img id="weathericon" src="./images/sunny.png" alt="weather icon">
+                <h2><span id="temperature">100</span>&deg; F</h2>
+            </div>
+            <h2 id="weatherdesc">Sunny</h2>
+            <hr>
+            <h3>Wind Speed: <span id="windspeed">50</span> mph</h3>
             <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
             </ul>
         </section>
@@ -121,8 +129,10 @@
 
         </p>
     </footer>
+
     <script src="./scripts/getDates.js"></script>
     <script src="./scripts/hamburgerMenu.js"></script>
+    <script src="./scripts/getWeatherInformation.js"></script>
 </body>
 
 </html>
