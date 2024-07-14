@@ -137,6 +137,21 @@ main .hero {
     background: var(--black-color);
 }
 
+.weather__card {
+    padding: 8px;
+}
+
+.weather__card img {
+    width: 100px;
+}
+
+.weather-card__data {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
 .card {
     border-radius: 8px;
     overflow: hidden;

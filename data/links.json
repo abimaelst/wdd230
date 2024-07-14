@@ -12,6 +12,31 @@
           "title": "mQueries"
         }
       ]
+    },
+    {
+      "week": "Week 2",
+      "links": [
+        {
+          "url": "https://byui-cse.github.io/wdd230-ww-course/week02/prepare-design-principles.html",
+          "title": "Design Principles"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-ww-course/week02/prepare-favicon.html",
+          "title": "Favicon"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-ww-course/week02/prepare-social-media-meta.html",
+          "title": "Social Media Meta"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-ww-course/week02/prepare-responsive-menu.html",
+          "title": "Responsive Hamburger Menu"
+        },
+        {
+          "url": "https://byui-cse.github.io/wdd230-ww-course/week02/prepare-dom-manipulation.html",
+          "title": "DOM Manipulation"
+        }
+      ]
     }
   ]
 }
