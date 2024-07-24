@@ -104,6 +104,30 @@
                 </div>
             </div>
         </section>
+        <section class="card">
+            <h2>Information</h2>
+            <div class="weather__card">
+                <p>Fortaleza, Brazil Weather Forecast,</p>
+                <div class="weather-card__data">
+                    <img id="weathericon" src="./images/sunny.png" alt="weather icon">
+                    <h3>
+                        <span id="temperature">100</span>
+                        &deg; F
+                    </h3>
+                    <h3 id="weatherdesc">Sunny</h3>
+                </div>
+                <hr>
+                <h3>Wind Speed:
+                    <span id="windspeed">50</span>
+                    mph
+                </h3>
+                <hr>
+                <p>
+                    <span class="label">Number of Visits: </span>
+                    <span class="visits"></span>
+                </p>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -139,6 +163,7 @@
 
 
     <script src="scripts/chamber.js"></script>
+    <script src="./scripts/getWeatherInformation.js"></script>
 </body>
 
 </html>
